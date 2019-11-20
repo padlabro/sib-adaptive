@@ -1,0 +1,136 @@
+@media (max-width: 1000px) {
+  .logo {
+    &__img {
+      width: 24px;
+      height: 24px;
+    }
+
+    &__name {
+      display: none;
+    }
+  }
+
+  .sidebar {
+    width: 104px;
+
+    .sidebar__inner {
+      &::before {
+        display: block;
+      }
+
+      &::after {
+        display: block;
+      }
+    }
+
+    .filter {
+      width: 104px;
+      cursor: default;
+
+      &__title {
+        display: none;
+      }
+    }
+  }
+
+  .main {
+    .main__coupons {
+      padding: 16px 0;
+    }
+
+    .coupon-wrapper {
+      width: 298px;
+
+      .coupon {
+        cursor: default;
+        font-size: 14px;
+
+        &__name {
+          margin-bottom: 26px;
+        }
+
+        &__img {
+          width: 104px;
+          height: 144px;
+        }
+      }
+    }
+  }
+
+  .header {
+    .header__title {
+      margin: 30px 27px;
+      text-align: right;
+    }
+
+    .header__input {
+      margin: 30px 27px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    .header__input {
+      .input {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    .header__input {
+      margin: 27px 20px 27px 20px;
+    }
+  }
+
+  .sidebar {
+    width: 12px;
+  }
+
+  .sidebar__inner {
+    .filter {
+      display: none;
+
+      &__icon {
+        display: none;
+      }
+    }
+
+    .sidebar__logo {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .main {
+    .main__coupons {
+      .coupon-wrapper {
+        width: 270px;
+
+        .coupon {
+          font-size: 12px;
+        }
+
+        .name__title {
+          margin-bottom: 0;
+        }
+
+        .benefit__value {
+          line-height: 24px;
+          font-size: 28px;
+          margin-bottom: 0;
+        }
+
+        .coupon__img {
+          right: -5px;
+          width: 89px;
+          height: 130px;
+        }
+      }
+    }
+  }
+}
